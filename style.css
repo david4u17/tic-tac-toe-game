@@ -1,5 +1,6 @@
 body {
     font-family: "Arial", sans-serif;
+    background: radial-gradient(#d46de7,#7249ef);
 }
 
 section {
@@ -11,22 +12,96 @@ section {
     grid-template-columns: repeat(3, auto);
     width: 306px;
     margin: 50px auto;
+    outline: 2px solid transparent; /* Transparent outline to reserve space for the neon border */
+    box-shadow: -5px -5px 15px rgba(245, 49, 186, 0.5), /* Cyan glow */
+                5px 5px 15px rgba(221, 123, 224, 0.5), /* Magenta glow */
+                2px 2px 15px rgba(157, 79, 240, 0.5), /* Yellow glow */
+                -2px -2px 15px rgba(185, 35, 240, 0.5); /* Green glow */
 }
+
+
+.game--status{
+    font-family: "Arial", cursive;
+    font-size: 2em; /* Adjust the font size as needed */
+    text-align: center;
+    color: #1d0dfd; /* Hot pink color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow effect */
+    animation: neonEffect 1.5s infinite alternate; /* Neon effect animation */
+}
+
+/* Neon effect animation */
+@keyframes neonEffect {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1493, 0 0 35px #FF1493, 0 0 40px #FF1493, 0 0 50px #FF1493;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #FF1493, 0 0 50px #FF1493, 0 0 60px #FF1493, 0 0 75px #FF1493;
+    }
+}
+.game--title {
+    font-family: "Monoton", cursive;
+    font-size: 3em; /* Adjust the font size as needed */
+    text-align: center;
+    color: #FF1493; /* Hot pink color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow effect */
+    animation: neonEffect 1.5s infinite alternate; /* Neon effect animation */
+}
+
+/* Neon effect animation */
+@keyframes neonEffect {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1493, 0 0 35px #FF1493, 0 0 40px #FF1493, 0 0 50px #FF1493;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #FF1493, 0 0 50px #FF1493, 0 0 60px #FF1493, 0 0 75px #FF1493;
+    }
+}
+
 
 .cell {
     font-family: "Permanent Marker", cursive;
     width: 100px;
     height: 100px;
-    box-shadow: 0 0 0 1px #333333;
     border: 1px solid #333333;
     cursor: pointer;
     line-height: 100px;
     font-size: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 
+                0 4px 8px rgba(0, 0, 0, 0.2), 
+                0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
+
+.cell:hover {
+    transform: translateY(2px);
+}
+
 
 .grid-container {
     display: grid;
     margin: auto;
     width: 400px;
     grid-template-columns: repeat(2, auto);
+}
+
+.game--restart {
+    background-color: #265af6; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.game--restart:hover {
+    background-color: #1120fd; /* Darker Green */
+    transform: scale(1.1); /* Scale up on hover */
 }
