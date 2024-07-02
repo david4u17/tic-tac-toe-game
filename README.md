@@ -25,4 +25,4 @@ This project implements a classic Tic-Tac-Toe game where two players take turns 
 
 ## Credits
 
-This game was created by [David](https://github.com/david4u17).
+This game was created by [David Kawadkar](https://github.com/david4u17).
