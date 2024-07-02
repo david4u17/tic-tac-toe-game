@@ -15,11 +15,7 @@ This project implements a classic Tic-Tac-Toe game where two players take turns 
 
 ## Live Demo
 
-You can try out the live version of this Tic-Tac-Toe game [here](https://password-generator-liard-six.vercel.app).
-
-## Screenshots
-
-*(Optional: Include screenshots of your game in action)*
+[You can try out the live version of this Tic-Tac-Toe game here](https://password-generator-liard-six.vercel.app).
 
 ## Technologies Used
 
@@ -29,4 +25,4 @@ You can try out the live version of this Tic-Tac-Toe game [here](https://passwor
 
 ## Credits
 
-This game was created by [Your Name].
+This game was created by [David](https://github.com/david4u17).
